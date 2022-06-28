@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="validar.js"></script>
+    <link rel="stylesheet" href="{% static 'Style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+</head>
+<body class="container-fluid" id="Fondo4">
+  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-coll apse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="{% static 'login.html' %}">Persona</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="{% static 'Contacto.html' %}">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% static 'Donacion.html' %}">Quieres ser parte un una Fundacion sin fines de lucro</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="{% static 'producto.html' %}">Tú proximo destino.</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="{% static 'index.html' %}">Inicio</a>
+                </li>
+            </ul>
+            <div style="text-align: center;" class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Hoteles
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="{% static 'login.html' %}">Ingreso</a></li>
+                    <li><a class="dropdown-item" href="{% static 'producto.html' %}">All inclusive</a></li>
+                    <li><a class="dropdown-item" href="{% static 'producto.html' %}">Productos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<form class="row g-3 needs-validation" onsubmit = "return validar() ">
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label" id="Nombre">Nombre</label>
+      <input type="text" class="form-control" id="Nombre" required>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label" id="Apellido">Apellido</label>
+      <input type="text" class="form-control" id="Apellido" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label" id="Correo" aria-required="">Correo</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="email" class="form-control" id="Correo" aria-describedby="inputGroupPrepend">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label" id="Telefono">Telefono</label>
+      <input type="text" class="form-control" id="Telefono" required>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">Usuario / Visita</label>
+      <select class="form-select" id="Ciudad" required>
+        <option selected disabled value="">Usuario</option>
+        <option>Visita</option>
+      </select>
+    </div>
+    <div class="input-group">
+        <span class="input-group-text" id="Motivo">Motivo de contacto</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+
+      <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><h4><a href="{% static 'index.html' %}" class="nav-link px-2 text-dark">Inicio</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'producto.html' %}" class="nav-link px-2 text-dark">Tienda</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'Seguimineto.html' %}" class="nav-link px-2 text-dark">Sigue tu compra</a></h2></li>
+                <li class="nav-item"><h4><a href="{% static 'login.html' %}" class="nav-link px-2 text-dark">Registrate</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'contacto.html' %}" class="nav-link px-2 text-dark">Contacto</a></h4></li>
+            </ul>
+            <p class="text-center text-dark">&copy; 2022 Marian Moreno, Alex Llancafil Company</p>
+        </footer>
+    </div>
+
+
+
+    </div>
+
+    <!--FOOTER-->
+
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+ 
+            
+
+    <!--jquery-->
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

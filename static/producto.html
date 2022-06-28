@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'galeria/icon.jpg' %}">
+    <link rel="stylesheet" href="{% static 'Style.css' %}">
+    <title>Productos</title>
+</head>
+<body>
+    <nav id="{% static 'header' %}" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'Contacto.html' %}">Persona</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'index.html' %}">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% static 'index.html' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'producto.html' %}">Tú proximo destino.</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'producto.html' %}">Revisa nuestros Productos</a>
+                    </li>
+                </ul>
+                <div style="text-align: center;" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Hoteles
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="{% static 'login.html' %}">Ingreso</a></li>
+                        <li><a class="dropdown-item" href="{% static 'index.html' %}">All inclusive</a></li>
+                        <li><a class="dropdown-item" href="{% static 'producto.html' %}">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="Paquetes">
+        <div class="row">
+            <main id="items" class="col-sm-8 row"></main>
+            <aside class="col-sm-4">
+                <h2 class="carro">Paquetes de Vuelo </h2>
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <p class="text-right">Total en USD: <span id="total"></span></p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="boton-comprar" class="btn btn-primary">Comprar</button>
+            </aside>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><h4><a href="{% static 'index.html' %}" class="nav-link px-2 text-dark">Inicio</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'producto.html' %}"class="nav-link px-2 text-dark">Tienda</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'Seguimineto.html' %}" class="nav-link px-2 text-dark">Sigue tu compra</a></h2></li>
+                <li class="nav-item"><h4><a href="{% static 'login.html' %}" class="nav-link px-2 text-dark">Registrate</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'contacto.html' %}" class="nav-link px-2 text-dark">Contacto</a></h4></li>
+            </ul>
+            <p class="text-center text-dark">&copy; 2022 Marian Moreno, Alex Llancafil Company</p>
+        </footer>
+    </div>
+
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="Producto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

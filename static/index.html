@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% load static %} 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'Style.css' %}">
+    <title>Paquetes de viajes</title>
+</head>
+<body id="Fondo">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'login.html' %}">Persona</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'Contacto.html' %}">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% static 'producto.html' %}">Paquetes de viajes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="{% static 'Donacion.html' %}">Obten tú oferta al realizar Donaciones</a>
+                    </li>
+                </ul>
+                <div style="text-align: center;" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Hoteles
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="{% static 'login.html' %}">Ingreso</a></li>
+                        <li><a class="dropdown-item" href="{% static 'producto.html' %}">All inclusive</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Main-->
+    <main id="main" class="col s12">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'Imagenes1.1/Chile1.jpg' %}" alt="..." class="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button><a href="{% static 'Paisajes/Canada.jpg' %}" type="button" class="btn btn-Plantitas">¡Revisa este fabuloso destino!</a></button>
+                        <p class="text">Puedes conseguir vuelos a culaquier parte del mundo atraves de nuestro sitio web, conseguiras las mejores ofertas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'Imagenes1.1/Grecia1.jpg' %}" alt="..." class="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button><a href="{% static 'galeria/Grecia.jpg' %}" type="button" class="btn btn-Plantitas">¿Y si vamos a Grecia.</a></button>
+                        <p class="text">.Puedes escaparte a cualquier lugar del mundo con tú persona favorita o con toda tú familia sin tener que preocuparte por nada.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'Imagenes1.1/Paisaje1.jpg' %}" alt="..."  class="img">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button><a href="{% static 'Paisajes/Alemania.jpg' %}" type="button" class="btn btn-Plantitas">Alojamientos en Alemania</a></button>
+                        <p class="text">.Tenemos alojamiento para todo los gustos, desde hoteles cinco estrellas hasta casas con todas las comodidades incluida.</p>
+                    </div>
+                    <div class="overlay">
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <main id="main">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'Imagenes1.1/Disney.jpg' %}" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button><a href="{% static 'Paisajes/Paris.jpg' %}" type="button" class="btn btn-Plantitas">¿Te gustaria ir a Disney en Paris?</a></button>
+                        <p class="text">¡Veamos las mejores ofertas para disfrutar este invierno! </p>
+                        .
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'Imagenes1.1/Chile2.jpg' %}" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="{% static 'Paisajes/Chile1.jpg' %}"><button type="button" class="btn btn-Plantitas">¡Chile podria ser tu proximo destino!</button></a>
+                        <p class="text">.Conocido como uno de los mejores destinos </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'Imagenes1.1/Chile3.jpg' %}" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <button><a href="{% static 'galeria/Chile2.jpg' %}" type="button" class="btn btn-Plantitas">Descubre mas sobre los siguientes vuelos</a></button>
+                        <p class="text">Al comprar tus paquetes vacaciondes. ¡Comprar paquetes de viaje siempre te va a resultar más barato!</p>
+                    </div>
+                    <div class="overlay">
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'Paisajes/Paris.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">¡Fundaciones sin fines de lucro!</h3>
+                    <p class="card">Aca puedes realizar una donación que salga de tu corazón</p>
+                    <button><a href="{% static 'Donacion.html' %}" type="button" class="btn btn-Plantitas">Realizar donacion</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'Paisajes/brasil.jpg' %}" card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Revisa como va tu compra</h3>
+                    <p class="card">¿Quieres revisar tu compra?</p>
+                    <button><a href="{% static 'Seguimineto.html' %}" type="button" class="btn btn-Plantitas">Revisar compra</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'Paisajes/Alemania.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">¡Registrate!</h3>
+                    <p class="card-text">Puedes conseguir maravillosos destinos solo registrandote</p>
+                    <button><a href="{% static 'login.html' %}" type="button" class="btn btn-Plantitas">Registrate</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="{% static 'container' %}">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><h4><a href="{% static 'index.html' %}" class="nav-link px-2 text-dark">Inicio</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'producto.html' %}" class="nav-link px-2 text-dark">Tienda</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'Seguimineto.html' %}" class="nav-link px-2 text-dark">Sigue tu compra</a></h2></li>
+                <li class="nav-item"><h4><a href="{% static 'login.html' %}" class="nav-link px-2 text-dark">Registrate</a></h4></li>
+                <li class="nav-item"><h4><a href="{% static 'contacto.html' %}" class="nav-link px-2 text-dark">Contacto</a></h4></li>
+            </ul>
+            <p class="text-center text-dark">&copy; 2022 Marian Moreno, Alex Llancafil Company</p>
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+            -->
+</body>
+
+</html>
